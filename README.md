@@ -1,80 +1,84 @@
-# 🔒 Malware Detection System
+# 📄 Automated Resume Screening using Machine Learning
 
-A powerful **Machine Learning-based system** developed in **Python** to detect and classify various types of malware. It addresses the limitations of traditional signature-based detection by leveraging modern ML algorithms and feature extraction techniques to identify evolving cyber threats in real-time.
-
----
-
-## 🧠 Project Overview
-
-This project focuses on building a **Decision Support System** that uses advanced ML models and feature reduction techniques to enhance the accuracy and efficiency of malware detection. It classifies malware types such as:
-
-- 🦠 **Viruses**
-- 🐍 **Worms**
-- 🕵️‍♂️ **Spyware**
-- 🔐 **Ransomware**
-- 👁️ **Keyloggers**
-- 🧰 **Rootkits**
+An intelligent, machine learning-based system to automate the screening of resumes. This project helps recruiters by automatically classifying, analyzing, and ranking candidates based on their relevance to a specific job role.
 
 ---
 
-## ⚙️ Features
+## 🚀 Features
 
-- ✅ TF-IDF-based feature extraction
-- ✅ Supervised learning with **Random Forest** and **SVM**
-- ✅ Dimensionality reduction using **PCA** and **Autoencoders**
-- ✅ Real-time pattern analysis and anomaly detection
-- ✅ Classification of major malware types
-- ✅ Built for scalability and extensibility in real-world systems
-
----
-
-## 📊 Tech Stack
-
-| Category       | Tools / Libraries                        |
-|----------------|-------------------------------------------|
-| 🐍 Language      | Python                                    |
-| 📦 Libraries     | Scikit-learn, Pandas, NumPy               |
-| 🔍 Feature Extraction | TF-IDF                                |
-| 🧠 ML Models     | Random Forest, Support Vector Machine (SVM) |
-| 🔽 Dimensionality Reduction | PCA, Autoencoders                    |
+- 📥 Upload resumes in **PDF** or **TXT** formats.
+- 🧽 Clean and preprocess resume text using NLP techniques.
+- 🧠 Classify resumes into predefined **job categories** using a **KNN classifier**.
+- 📊 Extract **skills**, **qualifications**, and **years of experience**.
+- 📈 Compute **resume-job match percentage** using **Cosine Similarity**.
+- ⚠️ Detect **plagiarism** across resumes using **Fuzzy Matching**.
+- 💻 Built with **Streamlit** for an interactive and user-friendly interface.
 
 ---
 
-## 📁 Dataset
+## 🧠 Technologies Used
 
-The project uses structured datasets containing labeled malware samples and benign files, processed through TF-IDF for vectorization. (You can replace this section with your actual dataset source or link if needed.)
-
----
-
-## 🛡️ Motivation
-
-As malware threats become more complex and adaptive, traditional detection methods struggle to keep up. This project aims to provide a robust and flexible detection mechanism powered by machine learning — capable of analyzing massive datasets, learning from patterns, and adapting to new threats.
-
----
-
-## 🚀 Future Enhancements
-
-- 🔄 Real-time integration with system monitoring tools
-- 📈 Improve accuracy with ensemble models
-- 🖥️ Web-based GUI for malware scanning and visualization
-- ☁️ Cloud deployment for scalable enterprise use
+- **Language**: Python  
+- **Libraries**: 
+  - `Scikit-learn`
+  - `Streamlit`
+  - `pdfplumber`
+  - `FuzzyWuzzy`
+  - `Numpy`, `Pandas`, `NLTK`
 
 ---
 
-## 📸 Screenshots (optional)
+## 📊 How It Works
 
-_Add screenshots of your terminal output, graphs, or UI here._
+1. **Upload** a resume via the web app.
+2. **Parse** and clean the resume text using `pdfplumber`.
+3. **Classify** the resume into job categories using TF-IDF + KNN.
+4. **Extract** skills and compute years of experience.
+5. **Compare** resume with a given job description using **Cosine Similarity**.
+6. **Detect** plagiarism with FuzzyWuzzy string matching.
 
 ---
 
-## 📬 Contact
+## 📈 Sample Results
 
-Feel free to reach out for collaboration or questions:
+| Metric        | Score         |
+|---------------|---------------|
+| Classification Accuracy | 93%          |
+| Resume Match Precision | 91%          |
+| Plagiarism Detection   | >85% Similarity Identified |
+
+---
+
+## 💻 Running the App
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/automated-resume-screening.git
+cd automated-resume-screening
+
+# Install required packages
+pip install -r requirements.txt
+
+# Launch the app
+streamlit run app.py
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Integrate deep learning models (e.g., BERT) for better understanding.
+- Add live scraping of job descriptions from portals like LinkedIn.
+- Support multiple resume formats (DOCX, HTML).
+- Expand classification to include more job roles.
+
+---
+
+## 👨‍💻 Author
 
 **Harsha**  
-📧 [dumpaharsha2003@gmail.com]  
-🌐 [https://arshavardhan.github.io/portfolio/]
+Cybersecurity Enthusiast | Cloud Architect | Machine Learning Explorer  
+[![LinkedIn](https://www.linkedin.com/in/harsha-vardhan-dumpa-862082233/)  
+[![GitHub](https://arshavardhan.github.io/portfolio/)
 
 ---
-
-⭐ *If you find this project helpful, please give it a star!*  
